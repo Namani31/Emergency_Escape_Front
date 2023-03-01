@@ -28,7 +28,8 @@
 ```
 
 ## 커밋 메시지 작성 방법
-```
+
+
 1. 커밋 유형 지정
 FEAT : 새로운 기능의 추가
 FIX: 버그 수정
@@ -44,7 +45,7 @@ CHORE: 빌드 업무 수정, 패키지 매니저 수정(ex .gitignore 수정 같
 5. 제목 행에 마침표 넣지 말 것
 6. 본문에 변경 한 내용과 **이유** 설명 (어떻게 X, 무엇과 왜 O)
 7. 본문에 내용 적을 때, 여러 내용이 들어간다면 하이픈 (-) 사용할 것
-```
+
 
 ## 팀과 협업
 - [ ] [새 머지 리퀘스트 생성](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)

@@ -1,92 +1,64 @@
 # Evacuation Map
 
-
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
+## 시작하기에 앞서
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/kimyunji9272/evacuation-map.git
-git branch -M main
-git push -uf origin main
+**절대 메인 브랜치에 바로 커밋, 푸시하지 말 것**
+각자의 브랜치에 작업을 하고
+리뷰한 뒤에 최종으로 올라갈 코드를
+머지 리퀘스트 할 예정임
 ```
 
-## Integrate with your tools
+## 클론하기
+```
+1. 브랜치를 main 으로 체크하기
+2. 파란색의 [Clone] 버튼 클릭
+3. "Clone with HTTPS" 의 주소를 복사하기
+4. 인텔리제이 켜고, 기존 프로젝트가 열려져있다면 닫음
+5. 인텔리제이 메인화면의 [VCS에서 받기] 클릭
+6. URL 부분에 3번 에서 복사한 주소를 넣고, 깃랩의 아이디와 비번으로 로그인
+```
 
-- [ ] [Set up project integrations](https://gitlab.com/kimyunji9272/evacuation-map/-/settings/integrations)
+## 커밋 메시지 작성 방법
+```
+1. 커밋 유형 지정
+FEAT : 새로운 기능의 추가
+FIX: 버그 수정
+DOCS: 문서 수정
+STYLE: 스타일 관련 기능(코드 포맷팅, 세미콜론 누락, 코드 자체의 변경이 없는 경우)
+REFACTOR: 코드 리펙토링
+TEST: 테스트 코트, 리펙토링 테스트 코드 추가
+CHORE: 빌드 업무 수정, 패키지 매니저 수정(ex .gitignore 수정 같은 경우)
 
-## Collaborate with your team
+2. 한글로 적어도 되고, 영어로 적어도 되지만 영어로 하는게 좋음
+3. 제목과 본문을 빈 행으로 분리할 것
+4. 제목 행의 첫 글자는 대문자로 시작할 것
+5. 제목 행에 마침표 넣지 말 것
+6. 본문에 변경 한 내용과 **이유** 설명 (어떻게 X, 무엇과 왜 O)
+7. 본문에 내용 적을 때, 여러 내용이 들어간다면 하이픈 (-) 사용할 것
+```
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+## 해야 할 일들
+```
+1. 각자 맡은 역할을 토대로 클론 코딩 시작
+2. 와이어프레임 작성
+3. 데이터베이스 구축
+4. CI/CD 구축
+```
 
-## Test and Deploy
+## 팀과 협업
+- [ ] [새 머지 리퀘스트 생성](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
+- [ ] [머지 리퀘스트에서 자동으로 이슈 종료](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
+- [ ] [머지 리퀘스트 승인 활성화](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
+- [ ] [파이프라인 성공 시 자동 병합](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
-Use the built-in continuous integration in GitLab.
+## 테스트 및 배포
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+GitLab 에 내장된 CI/CD 사용하기
+
+- [ ] [GitLab CI/CD 시작하기](https://docs.gitlab.com/ee/ci/quick_start/index.html)
+- [ ] [SAST를 사용하여 알려진 취약점에 대한 코드 분석](https://docs.gitlab.com/ee/user/application_security/sast/)
+- [ ] [Auto Deploy를 이용하여 쿠버네티스, 아마존 EC2 또는 아마존 ECS에 배포하기](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
+- [ ] [개선된 쿠버네티스 관리를 위해 pull-based 배포 사용](https://docs.gitlab.com/ee/user/clusters/agent/)
+- [ ] [보호된 환경 설정](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
 ***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
